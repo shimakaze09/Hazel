@@ -8,4 +8,7 @@ set(SRC_LIST
 
 add_library(hazel STATIC ${SRC_LIST})
 
-target_include_directories(${PROJECT_NAME} PUBLIC vendor/spdlog/include)
+target_include_directories(${PROJECT_NAME} PUBLIC
+        vendor/spdlog/include
+        src/Hazel/Core
+        src/Hazel/Events)
