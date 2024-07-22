@@ -6,9 +6,11 @@
 #define SANDBOX_HAZEL_HPP
 
 #include <stdio.h>
-#include "Hazel/Application.hpp"
 
-#endif// SANDBOX_HAZEL_HPP
+#include "Hazel/Application.hpp"
+#include "Hazel/Log.hpp"
 
 // ----------------- Entry Point -----------------
 #include "Hazel/EntryPoint.hpp"
+
+#endif// SANDBOX_HAZEL_HPP
