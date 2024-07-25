@@ -61,8 +61,6 @@ namespace Hazel {
 
         EVENT_CLASS_TYPE(KeyTyped);
     };
-
-
 }// namespace Hazel
 
 #endif//SANDBOX_KEY_EVENT_H

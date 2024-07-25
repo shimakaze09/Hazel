@@ -3,6 +3,8 @@ set(CMAKE_CXX_STANDARD 14)
 
 project(Sandbox)
 
+add_compile_definitions(HZ_PLATFORM_WINDOWS)
+
 set(SRC_LIST src/SandboxApp.cpp)
 
 add_subdirectory(Hazel)
