@@ -3,7 +3,9 @@ set(CMAKE_CXX_STANDARD 14)
 
 project(Sandbox)
 
-add_compile_definitions(HZ_PLATFORM_WINDOWS)
+if (WIN32)
+    add_compile_definitions(HZ_PLATFORM_WINDOWS)
+endif ()
 
 set(SRC_LIST src/SandboxApp.cpp)
 

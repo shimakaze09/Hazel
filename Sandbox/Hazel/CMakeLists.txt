@@ -3,6 +3,9 @@ set(CMAKE_CXX_STANDARD 14)
 find_package(OpenGL REQUIRED)
 
 project(hazel)
+
+add_compile_definitions(HZ_BUILD_DLL)
+
 set(SRC_LIST
         src/Hazel/Application.cpp
         src/Hazel/Log.cpp
@@ -10,7 +13,7 @@ set(SRC_LIST
         src/Hazel/glad.c
 )
 
-add_library(hazel STATIC ${SRC_LIST})
+add_library(hazel ${SRC_LIST})
 add_subdirectory(vendor/GLFW)
 
 target_link_libraries(${PROJECT_NAME} glfw)
